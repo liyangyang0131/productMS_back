@@ -1,0 +1,45 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add mongodb -D
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;.;C:\Program Files\Java\jdk1.8.0_73;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\OpenSSH\bin;D:\Program Files\TortoiseGit\bin;D:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\0\AppData\Local\Yarn\bin;D:\Program Files\nodejs;C:\Users\0\AppData\Roaming\npm
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  12.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\0\AppData\Local\Yarn\Cache\v3\npm-statuses-1.5.0-161c7dac177659fd9811f43771fa99381478628c\node_modules\statuses\codes.json' -> 'D:\lyy\github\productMS_back\node_modules\body-parser\node_modules\statuses\codes.json'
+
+npm manifest: 
+  {
+    "name": "productms-back",
+    "version": "0.0.0",
+    "private": true,
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "jade": "~1.11.0",
+      "morgan": "~1.9.1"
+    },
+    "devDependencies": {
+      "body-parser": "^1.19.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
