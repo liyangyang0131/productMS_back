@@ -1,4 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID;
 
 const dburl = 'mongodb://localhost:27017';
 const dbName = 'productmanage';
@@ -15,6 +16,8 @@ function _connectDB(callback) {
     })
 }
 
+exports.ObjectID = ObjectID;
+
 // collectionname 表名
 // json 查询条件
 
@@ -28,9 +31,17 @@ exports.find = function(collectionname,json,callback){
 }
 
 // 插入数据
-exports.insert = function(collectionname,arr,callback){
+exports.insertMany = function(collectionname,arr,callback){
     _connectDB(function(db){
         db.collection(collectionname).insertMany(arr,function(err,data){
+            callback(err,data);
+        })
+    })
+}
+
+exports.insertOne = function(collectionname,json,callback){
+    _connectDB(function(db){
+        db.collection(collectionname).insertOne(json,function(err,data){
             callback(err,data);
         })
     })
@@ -48,7 +59,7 @@ exports.updateOne = function(collectionname,originJSON,changeJSON,callback){
 // 删除数据
 exports.delete = function(collectionname,json,callback){
     _connectDB(function(db){
-        db.collection(collectionname).deleteOne(json,function(err,data){
+        db.collection(collectionname).remove(json,function(err,data){
             callback(err,data);
         })
     })
