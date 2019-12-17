@@ -8,3 +8,5 @@ router.post('/',(req,res)=>{
         message:'退出成功'
     })
 })
+
+module.exports = router;
